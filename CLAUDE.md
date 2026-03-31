@@ -1,6 +1,6 @@
 # Lansweeper — Client Brain
 
-_Initialized: 2026-03-30 | Last synced: 2026-03-30_
+_Initialized: 2026-03-30 | Last synced: 2026-03-31_
 _Website: https://www.lansweeper.com_
 _GitHub: https://github.com/matteof123/lansweeper_
 
@@ -187,40 +187,56 @@ Lansweeper sells a unified asset intelligence platform that discovers, inventori
 <!-- ============ DYNAMIC — UPDATED ON SYNC ============ -->
 
 ## Active Campaigns
-<!-- Sync: 2026-03-30 -->
-Campaigns are currently running on SmartLead + Clay (migration to EmailBison in progress). EmailBison workspace has 0 campaigns as of 2026-03-30.
+<!-- Sync: 2026-03-31 -->
+Campaigns running on **SmartLead** (API key connected). 27 total campaigns: 4 active, 6 paused, 17 completed.
 
-Active campaigns identified from Slack (#lansweeper-outbound-replies-it) and Fireflies calls:
+| ID | Campaign | Status | Leads | Unique Sent | Replies | Reply % | Interested | Bounce | Unsub |
+|----|----------|--------|-------|-------------|---------|---------|------------|--------|-------|
+| 3105785 | LS: Past Champion | 🆕 Active | 107 | 0 | 0 | — | 0 | 0 | 0 |
+| 3094531 | LS: MSPs [Ai Copy] EU | 🆕 Active | 2,335 | 609 | 3 | 0.5% | 0 | 2 | 13 |
+| 2993068 | LS: Close-Lost | 🟢 Active | 1,010 | 1,010 | 29 | 2.9% | 8 | 56 | 0 |
+| 2900594 | LS: Website Visitors | 🟢 Active | 1,325 | 2,350 | 39 | 1.7% | 0 | 89 | 0 |
+| 3028566 | LS: IT Orgs [Ai Copy] EU | ✅ Done | 4,402 | 4,402 | 93 | 2.1% | 2 | 110 | 0 |
+| 2911913 | LS: IT Orgs [Ai Copy] | ✅ Done | 5,211 | 5,211 | 65 | 1.2% | 1 | 237 | 0 |
+| 2912101 | LS: MSPs [Ai Copy] | ✅ Done | 2,190 | 2,190 | 13 | 0.6% | 0 | 55 | 0 |
+| 3028996 | LS: IT Orgs [Intent Data] | ✅ Done | 288 | 288 | 0 | 0% | 0 | 0 | 0 |
+| 2953821 | LS: EOLS [Ai Copy] | ✅ Done | 1,226 | 1,226 | 4 | 0.3% | 0 | 33 | 0 |
 
-| Campaign | Channel | Status | Notes |
-|----------|---------|--------|-------|
-| LS: IT Organizations [Ai Copy] | Email | Active | US targeting, 1000+ employee IT orgs |
-| LS: IT Organizations [Ai Copy] EU | Email | Active | European targeting |
-| LS: Close-Lost | Email | Active | Reactivating closed-lost Salesforce deals |
-| LS: Website Visitors | Email | Active | Triggered by website visitor deanonymization |
-| IT - Indirect | LinkedIn | Active | Via Heyreach |
-| Website Visitor (A) | LinkedIn | Active | Via Heyreach |
-| Website Visitor (B) | LinkedIn | Active | Via Heyreach |
+**LinkedIn (Heyreach):**
+- IT - Indirect | Website Visitor (A) | Website Visitor (B) — via Ryan Gross, Nils
 
-~0.7% positive reply rate on main campaigns (per 2026-03-20 sales alignment call).
+**Totals across all 27 campaigns:** ~20,000+ unique leads | ~36,000+ emails sent | ~246+ replies | ~14 interested
+**Best performer:** Close-Lost — 2.9% reply rate, 8 interested (0.8% interested rate)
+
+<!-- Previous sync: 2026-03-30 -->
+<!-- Campaigns were identified from Slack only, no Smartlead API access. -->
 
 ## What's Working
-<!-- Sync: 2026-03-30 -->
-- **Close-Lost campaign** generating strongest positive replies — former prospects who already know Lansweeper are re-engaging (Deepak Chand booked meeting, Tony Lucarelli budgeted, Rafa Hens already purchased, Ronwald King at CGI wants to maximize license)
+<!-- Sync: 2026-03-31 -->
+- **Close-Lost campaign is the clear #1** — 2.9% reply rate, 8 interested out of 1,010 leads. Best by far. Former prospects who already know Lansweeper re-engaging at 3-4x the rate of cold campaigns.
+- **IT Orgs [Ai Copy] EU** completed with strong results — 93 replies, 2.1% reply rate on 4,402 leads. EU targeting outperforms US.
+- **Website Visitors campaign** generating volume — 39 replies on 2,350 unique sent (1.7% reply rate). But 0 marked interested — classification gap or sales handoff issue.
+- **2 NEW campaigns launched since init** — Past Champion (107 leads loaded, 0 sent yet) and MSPs [Ai Copy] EU (609 sent, 3 replies early).
 - **OT angle resonating** — Enrique Martín (Titanium Industrial Security) specifically asked about Lansweeper OT updates
-- **On-prem + AI question** from Serge Ghawitian (Banque BEMO) signals financial services demand for on-prem deployment
 - **CIO-level engagement** — Darren Marsden (CIO, West Brom Building Society) already evaluating Lansweeper through vendor
-- **LinkedIn RSAC event** — Nick C. will visit booth at RSA Conference
-- **Website visitor campaigns** driving pricing inquiries (Greg Emmerson asked about 12K asset cloud pricing)
+- **Sales team taking action** — Henry Mossop confirmed he'll "take action with the team tomorrow" on positive replies (Mar 30). First sign of sales team engagement.
+
+<!-- Previous sync: 2026-03-30 -->
+<!-- No Smartlead data. Close-Lost and OT angle identified from Slack only. -->
 
 ## What's Not Working
-<!-- Sync: 2026-03-30 -->
-- **Duplicate lead delivery in Slack** — Clay tables have logic bugs causing duplicate notifications across Lansweeper, Votary, BigVu. OpenAI credits running out stops lead processing, and re-runs create duplicates. Timestamp conditional fix needed.
-- **Sales team handoff gap** — Henry Mossop and Brad Massey only recently joined the Slack channel (Feb 18). Henry asked "How do my reps see these?" on Mar 12 — sales enablement still needed.
-- **Salesforce integration incomplete** — Positive replies not yet auto-pushed to SF as leads. Nils shared a Google Sheet summary as interim workaround (2026-03-30).
-- **Greg Emmerson (Applegreen) was already a customer** — flagged by team in Slack. Customer exclusion list needs tightening.
-- **Budget timing misses** — Rigo Lopez (CCUSD) declined due to budget constraints, asked to reconnect in July. K-12 budget cycles should inform send timing.
-- **EmailBison migration not started** — workspace is empty, campaigns still on SmartLead
+<!-- Sync: 2026-03-31 -->
+- **Intent Data campaign: 0 replies on 288 leads** — Complete failure. Intent data signals alone not driving engagement. Copy or targeting may be off.
+- **EOLS campaign: 0.3% reply rate** — 4 replies on 1,226 leads. End-of-life messaging not resonating.
+- **MSPs [Ai Copy] US: 0.6% reply rate** — 13 replies on 2,190 leads. MSP segment US underperforms vs IT orgs. New MSPs EU campaign (3 replies on 609 sent early) may improve.
+- **Website Visitors: 0 interested despite 39 replies** — 1.7% reply rate but 0 marked interested. Likely a classification/handoff gap in Smartlead, not a copy issue. Replies visible in Slack suggest some are actually positive.
+- **IT Orgs [Ai Copy] US: high bounce** — 237 bounces on 5,211 leads (4.5% bounce rate). List quality issue.
+- **Duplicate lead delivery in Slack** — Clay logic bugs persist across Lansweeper, Votary, BigVu. Timestamp conditional fix instructed (Areez).
+- **Salesforce integration still incomplete** — Nils sharing Google Sheet as interim. Ryan Gross confirmed Applegreen is a customer — exclusion list needed.
+- **Unsubscribe rate on MSPs EU** — 13 unsubscribes on 609 sent (2.1%) is high. May need opt-out language review for EU compliance.
+
+<!-- Previous sync: 2026-03-30 -->
+<!-- No Smartlead data. Issues identified from Slack/calls only. -->
 
 ## Recent Call Notes
 <!-- Sync: 2026-03-30 -->
@@ -249,27 +265,32 @@ Active campaigns identified from Slack (#lansweeper-outbound-replies-it) and Fir
 - Strategic account enrichment with hiring activity, leadership changes
 
 ## Recent Slack Updates
-<!-- Sync: 2026-03-30 -->
-- **2026-03-30**: Nils shared Google Sheet of positive replies with Henry Mossop for sales action. Greg Emmerson (Applegreen) flagged as existing customer — remove from lists.
+<!-- Sync: 2026-03-31 -->
+- **2026-03-31**: New website visitor notification in #lansweeper-website-visitors channel (bot post).
+- **2026-03-30**: Ryan Gross confirmed Greg Emmerson/Applegreen is already a customer — ISV team helped them renew. Must be removed from outbound lists.
+- **2026-03-30**: Henry Mossop responded to Nils' positive replies sheet: "thanks Nils! Will take action with the team tomorrow." First active sales engagement on outbound leads.
+- **2026-03-30**: Nils shared Google Sheet of positive replies with Henry Mossop for sales action.
 - **2026-03-30**: Enrique Martín García (Titanium Industrial Security) replied positively about Lansweeper OT.
-- **2026-03-27**: Batch of ~15 replies pushed to Slack at once (Clay backlog from OpenAI credit outage). Duplicates flagged.
-- **2026-03-17**: Henry Mossop requested a call to understand campaigns, targeting, and account coordination. Meeting held 2026-03-20.
-- **2026-02-19**: Santiago working on Salesforce pipeline setup for outbound leads.
-- **2026-02-18**: Nils acknowledged need for sales enablement, new joiner to handle outbound leads short-term.
+- **2026-03-30**: Areez flagged Lansweeper Clay table has same duplicate issues as Votary/BigVu. Matteo instructed timestamp conditional fix.
+- **2026-03-27**: Batch of ~15 replies pushed to Slack at once (Clay backlog). Duplicates present.
+
+<!-- Previous sync: 2026-03-30 -->
 
 ## ClickUp This Week
 <!-- Sync: 2026-03-30 -->
 _No ClickUp data available for Lansweeper — not tracked in ClickUp._
 
 ## Open Action Items
-<!-- Sync: 2026-03-30 -->
-1. **Fix Clay duplicate logic** — Add timestamp conditionals across all Clay tables (Areez)
-2. **Complete Salesforce integration** — Push positive replies as leads with campaign timeline, message history, job title, LinkedIn, employee count, lead status
-3. **Migrate to EmailBison** — Move campaigns from SmartLead to EmailBison for better deliverability and tracking
-4. **Sales enablement session** — Train sales reps on outbound lead handling, campaign systems, reply workflow
-5. **SITS UK event campaign** — Build ICP-matched attendee list, execute awareness outreach (pending attendee list from Nils)
-6. **Inbound lead enrichment** — Build Clay-based scoring workflow for Free Trial → Freemium leads (Nils to send briefing)
-7. **Strategic accounts data sheet** — Enrich with hiring activity, leadership changes, actionable signals
-8. **Contract renewal** — Send updated 3-month proposal to Nils for signing (Kinetyca branding)
-9. **Tighten customer exclusion** — Ensure existing customers (like Applegreen) are excluded from outbound lists
-10. **K-12 timing** — Schedule education-focused sends around July fiscal year start
+<!-- Sync: 2026-03-31 -->
+1. **Fix Clay duplicate logic** — Timestamp conditionals needed for Lansweeper tables (Areez, urgent — same issue as Votary/BigVu)
+2. **Monitor Past Champion campaign** — Just launched (107 leads, 0 sent). Watch ramp-up and first replies. Has strong copy with spintext + personalized AM references.
+3. **Monitor MSPs EU campaign** — 609 sent, 3 replies, 13 unsubscribes. High unsub rate (2.1%) — review EU opt-out compliance language.
+4. **Complete Salesforce integration** — Henry Mossop now actively engaged. Push positive replies to SF while momentum is fresh.
+5. **Tighten customer exclusion** — Applegreen confirmed as existing customer by Ryan Gross. Systematize exclusion via Salesforce customer list.
+6. **Investigate Website Visitor "0 interested"** — 39 replies but 0 marked interested in Smartlead. Cross-reference with Slack — some are clearly positive (Greg Emmerson pricing inquiry). Classification workflow may be broken.
+7. **Kill Intent Data approach** — 0 replies on 288 leads. Don't repeat this targeting without different copy/signals.
+8. **SITS UK event campaign** — Pending attendee list from Nils
+9. **Inbound lead enrichment** — Clay scoring workflow for Free Trial → Freemium (Nils briefing pending)
+10. **Contract renewal** — Send Kinetyca-branded 3-month proposal to Nils
+
+<!-- Previous sync: 2026-03-30 -->
